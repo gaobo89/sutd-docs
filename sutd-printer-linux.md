@@ -10,6 +10,8 @@ Guide for Installation of Fuji Xerox Printer on Ubuntu 14.04 LTS
 > Note: your **linux account** is required, not university account.
 
 3. Choose `Windows Printer via SAMBA` from `Other Network Printers`.
+(NOTE: you may need to install SAMBA, smbclient, python-smbc etc. if there is no above selector in your select list.
+If it still doesn't show up, you need to modify "browseable=no" to "yes" in the file /etc/samba/smb.conf)
 ![webpage03][webpage03]
 
 4. Input `smb://192.168.100.80/FujiXerox_BW` on the **Connection** address, and then click `continue`.
